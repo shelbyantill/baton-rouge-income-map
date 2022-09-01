@@ -7,7 +7,7 @@ import geopandas
 import webbrowser
 
 br_income_data= "income_data_visual_br.csv"
-la_zip_code_data = "lazipcodes"
+la_zip_code_data = "lazipcodes.json"
 
 geojson = geopandas.read_file(la_zip_code_data)
 geojson = geojson[["zcta5_code","geometry"]]
