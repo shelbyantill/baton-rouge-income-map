@@ -6,8 +6,8 @@ from folium.features import GeoJsonTooltip
 import geopandas
 import webbrowser
 
-br_income_data= "/Users/shelbyantill/Desktop/BR Map/Income_Data_Visual_BR - Sheet1.csv"
-la_zip_code_data = "/Users/shelbyantill/Desktop/BR Map/lazipcodes"
+br_income_data= "income_data_visual_br.csv"
+la_zip_code_data = "lazipcodes"
 
 geojson = geopandas.read_file(la_zip_code_data)
 geojson = geojson[["zcta5_code","geometry"]]
